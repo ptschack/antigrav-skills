@@ -2,32 +2,36 @@
 trigger: always_on
 ---
 
-# Documentation & Communication Standards (`README.md`, Code Comments & Simplified Technical Language)
+# Documentation and Communication Standards
 
-All software projects must maintain comprehensive project-level and code-level documentation at all times, and all written text must follow strict controlled-language clarity standards.
+Maintain complete project documentation and code documentation for all software projects. Write all text in Simplified Technical English (ASD-STE100 / ASD-STE1000).
 
 ## 1. Controlled Language Standard (`ASD-STE100` / `ASD-STE1000`)
-- Follow the **ASD-STE100 (Simplified Technical English / ASD-STE1000)** standard whenever you write in English across:
-  1. Project documentation (such as `README.md` and files in `spec/`).
+- Write all English text in compliance with the **ASD-STE100 / ASD-STE1000** standard.
+- Apply this standard to:
+  1. Project documentation (for example, `README.md` and files in `spec/`).
   2. Code comments and docstrings.
-  3. Direct conversation and responses to the user.
-- Core ASD-STE100 principles to apply:
-  - Use clear, unambiguous words (one word per meaning, one meaning per word).
-  - Write short, direct sentences (keep procedural sentences to a maximum of 20 words and descriptive sentences to a maximum of 25 words).
-  - Use the active voice and imperative mood for instructions.
-  - Avoid jargon, idioms, slang, and complex noun clusters (maximum of 3 nouns in a noun cluster).
-- **Non-English Languages:** When you write documentation, code comments, or conversation in a language other than English, do not apply English-specific ASD-STE100 rules. Instead, follow the equivalent simplified or controlled technical language standard for that target language (for example, *Leichte Sprache* / *Einfache Sprache* and DIN 82079-1 principles for German, or plain/controlled technical language equivalents in other languages), if one exists.
+  3. Direct messages and responses to the user.
+- Obey these ASD-STE100 rules:
+  - Use clear and approved words. Use one word for one meaning.
+  - Write short sentences. Use a maximum of 20 words for procedural sentences. Use a maximum of 25 words for descriptive sentences.
+  - Use the active voice. Use the imperative mood for instructions.
+  - Do not use jargon, idioms, or slang.
+  - Use a maximum of 3 nouns in a noun cluster.
+- **Other Languages:** Do not apply English ASD-STE100 rules to text in other languages. Use the equivalent simplified technical language standard for the target language (for example, *Einfache Sprache* and DIN 82079-1 for German).
 
-## 2. Project `README.md` Requirement
-- Every software project must have a `README.md` file at the project root. If one does not exist, create it; if project behavior changes, keep it updated.
-- The `README.md` must include:
-  1. **General Overview:** A clear description of the software, its purpose, key features, and high-level architecture.
-  2. **Installation Instructions:** Step-by-step prerequisites, dependencies, and setup/build instructions.
-  3. **Running & Usage Instructions:** Detailed instructions and concrete examples showing how to configure, run, and use the software (e.g., CLI commands, configuration options, or API usage).
+## 2. Project `README.md` Requirements
+- Every software project must have a `README.md` file in the root directory.
+- If the `README.md` file does not exist, create it.
+- If the software behavior changes, update the `README.md` file.
+- Include these sections in the `README.md` file:
+  1. **General Overview:** Describe the software, its purpose, its main functions, and its high-level architecture.
+  2. **Installation Instructions:** List all prerequisites and dependencies. Give step-by-step instructions to install and build the software.
+  3. **Usage Instructions:** Give instructions and examples to configure, run, and use the software (for example, CLI commands, configuration options, and API calls).
 
-## 3. Code Documentation Comments & Parameter Examples
-- All code units (modules, classes, interfaces, functions, and methods) must include idiomatic documentation comments for the language in use (e.g., docstrings in Python, JSDoc/TSDoc in JS/TS, Rustdoc in Rust, Javadoc in Java).
-- Every function, method, or callable documentation comment must:
-  1. Describe its purpose, behavior, and return value.
-  2. Document every parameter along with concrete **examples for each parameter** (e.g., valid sample values, formats, or a runnable usage snippet demonstrating parameter values).
-- Whenever adding or modifying code signatures, create or update the corresponding documentation comments in the same change.
+## 3. Code Documentation Comments and Parameter Examples
+- Write standard documentation comments for all modules, classes, interfaces, functions, and methods (for example, Python docstrings, JSDoc, TSDoc, Rustdoc, or Javadoc).
+- Include this information in every function or method comment:
+  1. The purpose, behavior, and return value of the function.
+  2. Each parameter and a clear example for each parameter (for example, valid values, data formats, or a code usage example).
+- When you add or change a function signature, update its documentation comment at the same time.
